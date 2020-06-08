@@ -2,11 +2,11 @@
 /*
 --asym is to check for asymmetricity
 --sksym is to check for skew-symmetricity in upper and lower triangular
---sksym is to check for skew-symmetricity diagonal elements
+--sksydm is to check for skew-symmetricity diagonal elements
 --if asym=1 then it means non diagonal elements are not equal may be chance of A=-A
 --if asym=1 and sksym=1 then its non diagonal elements are not equal as well as not A=-A then matrix is asymmetric
---if asym=1 and sksym=0 and sksymd=0 then its non diagonal elements are sign changed as well as diagonal elements are 0 so it is called skew-symmetric
---if asym=1 and sksym=0 and sksymd=1 then its non diagonal elements are sign changed as well as diagonal elements are not 0 so it is called asymmetric
+--if asym=1 and sksym=0 and sksydm=0 then its non diagonal elements are sign changed as well as diagonal elements are 0 so it is called skew-symmetric
+--if asym=1 and sksym=0 and sksydm=1 then its non diagonal elements are sign changed as well as diagonal elements are not 0 so it is called asymmetric
 --if asym=0 then upper and lower triangular matrices equal and irrespective of diagonal elements it is a symmetric matrix */
 int main()
 {	printf("check for symmetric or Skew-symmetric or Asymmetric matrix\n");
