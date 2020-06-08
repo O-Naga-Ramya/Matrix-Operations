@@ -1,0 +1,38 @@
+//Trace of a matrix
+#include <stdio.h>
+int main()
+{	printf("Trace of a square matrix");
+	printf("\n");
+    int i,j,k,l;
+    int matrix[10][10],trace;
+    printf ("enter no of rows");
+    scanf("%d", &i);
+    printf ("enter no of columns");
+    scanf("%d", &j);
+    if(i==j){
+      for (k=1;k<=i;k++)
+        {for(l=1;l<=j;l++)
+            {printf ("enter the element%d%dplace",k,l);
+            scanf("%d", &matrix[k][l]);
+            }
+        }
+// printing elements of matrix in matrix form
+    for(k=1;k<=i;k++)
+        {for(l=1;l<=j;l++)
+            {printf("%d\t",matrix[k][l]);}
+        printf("\n");
+        }
+    if(i==j){
+    for(k=1;k<=i;k++)
+    {
+    	trace=trace+matrix[k][k];
+	}
+	printf("trace of given matrix is %d",trace);
+	}
+	}
+	else
+	{printf("The matrix should be a square matrix to find trace");
+	}
+
+}
+    
