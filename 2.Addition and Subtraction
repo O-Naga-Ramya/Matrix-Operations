@@ -1,0 +1,59 @@
+//Addition and Subtraction of matrices
+#include <stdio.h>
+
+int main()
+{	printf("Addition and Subtraction of two matrices\n");
+    int i1,j1,i2,j2,k,l,m,n;
+    int matrix1[10][10],matrix2[10][10],matrix3[10][10],matrix4[10][10];
+    printf ("enter no of rows in 1st matrix");
+    scanf("%d", &i1);
+    printf ("enter no of columns in 2st matrix");
+    scanf("%d", &j1);
+    printf ("enter no of rows in 2nd matrix");
+    scanf("%d", &i2);
+    printf ("enter no of columns in 2nd matrix");
+    scanf("%d", &j2);
+    for (k=1;k<=i1;k++)
+    {for(l=1;l<=j1;l++)
+        {printf ("enter the element of matrix1 %d%dplace",k,l);
+        scanf("%d", &matrix1[k][l]);
+        }
+    }
+   
+    for (k=1;k<=i2;k++)
+    {for(l=1;l<=j2;l++)
+        {printf ("enter the element of matrix2 %d%dplace",k,l);
+        scanf("%d", &matrix2[k][l]);
+        }
+    }
+   
+    if(i1==i2 && j1==j2)
+for (k=1;k<=i1;k++)
+    {for(l=1;l<=j1;l++)
+	{matrix3[k][l]=matrix1[k][l]+matrix2[k][l];
+	matrix4[k][l]=matrix1[k][l]-matrix2[k][l];
+}
+		}    
+// printing elements of matrix in matrix form
+if(i1==i2 && j1==j2)
+{
+printf("the addition of two matrices");
+printf("\n");
+    for(n=1;n<=i1;n++)
+        {for(m=1;m<=j1;m++)
+            {printf("%d\t",matrix3[n][m]);}
+        printf("\n");
+        }
+        printf("\n");
+        printf("the subtraction of two matrices");
+printf("\n");
+    for(n=1;n<=i1;n++)
+        {for(m=1;m<=j1;m++)
+            {printf("%d\t",matrix4[n][m]);}
+        printf("\n");
+        }
+        
+    }
+    else
+    printf("add/sub of matrices not possible because order is not same");
+}
